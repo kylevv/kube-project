@@ -1,0 +1,26 @@
+{
+  "name": "kube-project",
+  "version": "1.0.0",
+  "description": "Experiment with Kubernetes",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 1337",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylevv/kube-project.git"
+  },
+  "keywords": [
+    "kubernetes"
+  ],
+  "author": "kylevv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylevv/kube-project/issues"
+  },
+  "homepage": "https://github.com/kylevv/kube-project#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
