@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kube-test
+spec:
+  replicas: 2
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: kube-test
+    spec:
+      containers:
+        - image: kylevv/kuby
+          imagePullPolicy: Always
+          name: kube-test
+          ports:
+            - containerPort: 1337
