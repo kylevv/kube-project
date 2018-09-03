@@ -1,6 +1,6 @@
 {
   "name": "kube-project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Experiment with Kubernetes",
   "main": "index.js",
   "scripts": {

@@ -16,7 +16,7 @@ spec:
         app: kube-test
     spec:
       containers:
-        - image: kylevv/kuby
+        - image: kylevv/kuby:v1.0.1
           imagePullPolicy: Always
           name: kube-test
           ports:
